@@ -21,6 +21,7 @@ public class Newasserstion {
 		  driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		  driver.findElement(By.name("username")).sendKeys("Admin");
 	  	  driver.findElement(By.name("password")).sendKeys("admin123");
+	  	driver.findElement(By.name("password")).sendKeys("admin123");
 	  	  String expectedtext ="Login2";
 	  String actual = driver.findElement(By.xpath("//button[.=' Login ']")).getText();
 	  	  	SoftAssert soft = new SoftAssert();
